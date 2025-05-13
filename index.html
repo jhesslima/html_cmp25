@@ -3,48 +3,90 @@
     <head>
         <meta charset="UTF-8" />
         <title>Jéssica Mendes</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Jéssica Mendes</h1>
-            <h2>Estudande de Ciência da Computação na Universidade de Vila Velha</h2>
-            <h3>Atualmente, aluna do Curso Minas Programam</h3>
+        <header id="menu">
+            <h1 class="logo">Jéssica Mendes</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li>Sobre mim</li>
+                    <li>Formação</li>
+                    <li>Experiências</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
         </header>
         <main>
-        <section>
-        <p>
+        <section id="sobre">
+
+            <img class="sobre-imagem" src="imagens/foto pessoal.jpg" alt="Foto de Jéssica Mendes na Câmara de Vereadores de Guarapari" />
+            
+            <h2 class="sobre-nome">Jéssica Mendes</h2>
+            <h3 class="sobre-titulo">Estudante de Ciência da Computação</h3>
+
+        <p class="sobre-descricao">
             Sou <strong>capixaba</strong>, <strong>estudante</strong> de Ciência da Computação, <strong>co-fundadora</strong> do Instituto Transform Education e <strong>aprendiz</strong> da área <i>tech</i>.
         </p>
-        <p>
-            Já dizia:
-            <cite>"Para ser bom, é preciso sentir raiva da mediocridade" - Filipe Ret</cite>
-        </p>
         </section>
-        <section>
-        <h3>O que mais você deve saber sobre mim?</h3>
-        <ul>
-            <li>Gosto de estudar sobre neurociência, inovação, liderança e educação</li>
-            <li>Conhecer novas pessoas e expandir a minha rede de contatos</li>
-            <li>Assistir tênis e ver o Flamengo ganhar</li>
-            <li>Contribuir para uma mudança significativa na sociedade</li>
-        </ul>
+
+        <section id="formacao">
+        <h2 class="formacao-titulo">Formação</h2>
+
+        <div class="formacao-lista">
+            <h3>Ciência da Computação</h3>
+            <a href="https://uvv.br/" target="_blank"> Universidade Vila Velha</a>
+            <p>Bacharel em Ciência da Computação, formando profissionais inovadores, com sólida base científica, com total aptidão para uso e aprimoramento da tecnologia</p>
+
+            <h3>Introdução à Programação</h3>
+                <a href="http://minasprogramam.com/" target="_blank">Instituto Minas Programam</a>
+                <p>Aprendizado em lógica de programação, front-end, fundamentos em CSS, HTML e JavaScript</p>
+        </div>
+
         </section>
-        <img src="foto pessoal.jpg" alt="Foto de Jéssica Mendes na Câmara de Vereadores de Guarapari" width="800" />
-        <section>
-            <h2>Entre em contato comigo!</h2>
-            <form>
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" /> <br />
 
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" email="email" placeholder="Digite o seu e-mail" /> <br />
+        <section id="experiencias">
+            <h2 class="experiencias-titulo">Experiências</h2>
 
-                <label for="mensagem">Mensagem: </label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui" rows="5"></textarea> <br />
+        <div class="experiencias-lista">
+            <h3>Head de Social Media</h3>
+            <a>SHARE Education</a>
+            <p>Responsável por análise de métricas, crescimento das redes sociais (Instagram & Linkedin), além da produção dos conteúdos com design gráfico e edição de vídeos</p>
+
+            <h3>Head de Social Media</h3>
+            <a href="https://www.instagram.com/isap.br/" target="_blank">ISAP Brasil</a>
+            <p>Responsável pelo gerenciamento do Instagram, principalmente pelos stories, alcançando mais de 20 mil pessoas</p>
+        </div>
+
+        </section>
+
+        <section id="contato">
+            <h2 class="contato-titulo">Entre em contato comigo!</h2>
+            <form class="contato-formulario">
+              <div class="contato-grupoinput">
+                <div class="contato-input">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" />
+                </div>
+
+                <div class="contato-input">
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" email="email" placeholder="Digite o seu e-mail" />
+                </div>
+              </div>
+
+                <div class="contato-input">
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui" rows="5"></textarea>
+                </div>
 
                 <button type="submit">Enviar</button>
             </form>
         </section>
+
         </main>
         <footer>
             <a href="https://www.linkedin.com/in/j%C3%A9ssica-mendes-de-lima-079778274/" target="_blank">Link para o meu Linkedin!</a> <br />
