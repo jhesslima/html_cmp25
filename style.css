@@ -31,6 +31,11 @@ body {
     font-weight: bold;
 }
 
+.navegacao ul li a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
 #sobre {
     text-align: center;
     background-color:whitesmoke;
@@ -157,10 +162,57 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-bottom: 20px;
 }
 
 .contato-input input {
     padding: 10px;
     font-size: 18px;
     border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.contato-input label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-enviar {
+    background-color: #28354f;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.rodape {
+    background-color: #28354f;
+    display: flex;
+    padding: 30px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-contatos a {
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.rodape-contatos img {
+    vertical-align: middle;
+}
+
+.logo-minas {
+    height: 80px;
 }
